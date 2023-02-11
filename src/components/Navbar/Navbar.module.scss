@@ -1,5 +1,67 @@
 .nav {
-  text-align: center;
-  background-color: red;
+  background-color: #343a40;
   color: #fff;
+  padding: max(0.75em, 0.75vw) max(1.25em, 1.25vw);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+
+  h1 {
+    width: 25%;
+    font-size: max(2em, 2vw);
+  }
+
+  .list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 75%;
+    display: flex;
+    gap: max(2em, 2vw);
+    justify-content: flex-end;
+
+    li {
+      list-style: none;
+      width: fit-content;
+      font-size: max(1.1em, 1.1vw);
+
+      a {
+        display: block;
+        padding: max(14px, 0.875vw) max(16px, 1vw);
+
+        &:hover {
+          background-color: #6c757d;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    h1 {
+      font-size: 1.8em;
+    }
+
+    .list {
+      gap: 1em;
+
+      li {
+        font-size: 0.8em;
+
+        a {
+          padding: 8px 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
 }

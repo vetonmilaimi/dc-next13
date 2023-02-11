@@ -7,8 +7,8 @@ interface Props {
 const HeroSection: React.FC<Props> = ({title}) => {
   return (
     <div className={styles.heroSection}>
-      <h1>{title.title}</h1>
-      <p>{title.quote}</p>
+      <h1 className={styles.title}>{title.title}</h1>
+      <p className={styles.quote}>{title.quote}</p>
     </div>
   )
 }
