@@ -1,0 +1,45 @@
+.mobileNav {
+  display: none;
+  position: absolute;
+  width: 80%;
+  max-width: 380px;
+  height: 100%;
+  background-color: #343a40;
+  padding: max(0.75em, 0.75vw) max(1.25em, 1.25vw);
+
+  h1 {
+    font-size: 1.2em;
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding: 0.5em;
+  }
+
+  .list {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    
+    li {
+      width: fit-content;
+      font-size: 1em;
+        display: block;
+
+      a {
+        color: #fff;
+        padding: 14px 16p;
+
+        &:hover {
+          background-color: #6c757d;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobileNav {
+    display: block;
+  }
+}

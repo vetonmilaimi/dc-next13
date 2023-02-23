@@ -8,11 +8,9 @@ export default async function Home() {
 
   return (
     <>
-      <Navbar />
       <main>
         <HeroSection title={headerData.data} />
       </main>
-      <Footer />
     </>
   )
 }
