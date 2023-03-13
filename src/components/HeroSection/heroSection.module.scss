@@ -4,7 +4,7 @@
       rgba(0, 3, 23, 0.52),
       rgba(0, 3, 23, 0.52)
     ),
-    url("../../../static/hero-background.webp");
+    url("../../../public/hero-background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   padding: max(150px, 12.5%) max(75px, 7.5%); // position: absolute;
@@ -14,11 +14,36 @@
   .title {
     color: #fff;
     font-size: max(5em, 5vw);
+    text-shadow: -2px 2px 0 #000;
   }
 
   .quote {
     font-size: max(20px, 1.25vw);
     color: #fff;
+    text-shadow: -1px 1px 0 #000;
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .heroSection {
+    .title {
+      font-size: 48px;
+    }
+    .quote {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heroSection {
+    padding: 32px 16px; // position: absolute;
+
+    .title {
+      font-size: 36px;
+    }
+    .quote {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,6 +1,6 @@
-import Footer from "@/components/Footer";
+import BottomHero from "@/components/BottomHero";
 import HeroSection from "@/components/HeroSection";
-import Navbar from "@/components/Navbar";
+import Services from "@/components/Services";
 import useFetch from "lib/useFetch";
 
 export default async function Home() {
@@ -10,6 +10,8 @@ export default async function Home() {
     <>
       <main>
         <HeroSection title={headerData.data} />
+        <BottomHero />
+        <Services />
       </main>
     </>
   )
