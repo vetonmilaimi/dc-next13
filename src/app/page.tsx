@@ -12,7 +12,6 @@ export default async function Home() {
         <HeroSection title={headerData.data} />
         <BottomHero />
         <Services />
-        
       </main>
     </>
   )
