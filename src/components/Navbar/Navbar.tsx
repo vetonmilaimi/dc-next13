@@ -6,28 +6,28 @@ const Navbar: React.FC = () => {
     <>
       <nav className={styles.nav}>
         <h1>
-          <a href="">
+          <a href="/">
             Duraj-Com
           </a>
         </h1>
         <ul className={styles.list}>
           <li>
-            <a href="">
+            <a href="/">
               Ballina
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="/contact-us">
               Kontaktoni me ne
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="/services">
               Shërbimet
             </a>
           </li>
           <li>
-            <a href="https://duraj.org/catalogue">
+            <a href="/catalogue">
               Katalogu
             </a>
           </li>
