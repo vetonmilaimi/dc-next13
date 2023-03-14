@@ -6,8 +6,10 @@ export default function Head() {
       <meta name="description" content="Ne e njohim mirë gjuhën e hekurit, tradita vazhdon, kualiteti na mban..." />
       <meta property="og:url" content="https://duraj.org" />
       <meta property="og:title" content="Duraj-com" />
+      <meta property="og:type" content="company" />
       <meta property="og:description" content="Ne e njohim mirë gjuhën e hekurit, tradita vazhdon, kualiteti na mban..." />
       <meta property="og:image" content="https://api2.duraj.org/images/image-1666968365719-772911110.jpeg" />
+      <meta property="fb:app_id" content="durajcom" />
       <link rel="icon" type="image/x-icon" sizes="16x16" href="/favicon.ico" />
     </>
   )
