@@ -1,3 +1,4 @@
+import Link from "next/link"
 import MobileNav from "../MobileNav"
 import styles from "./Navbar.module.scss"
 
@@ -6,30 +7,30 @@ const Navbar: React.FC = () => {
     <>
       <nav className={styles.nav}>
         <h1>
-          <a href="/">
+          <Link href="/">
             Duraj-Com
-          </a>
+          </Link>
         </h1>
         <ul className={styles.list}>
           <li>
-            <a href="/">
+            <Link href="/">
               Ballina
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/contact-us">
-              Kontaktoni me ne
-            </a>
+            <Link href="/contact-us">
+              Kontaktoni
+            </Link>
           </li>
           <li>
-            <a href="/services">
+            <Link href="/services">
               Shërbimet
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/catalogue">
+            <Link href="/catalogue">
               Katalogu
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

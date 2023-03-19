@@ -31,9 +31,11 @@
       a {
         display: block;
         padding: max(14px, 0.875vw) max(16px, 1vw);
+        transition: all 0.5s;
 
         &:hover {
-          background-color: #6c757d;
+          background-color: #f2c014;
+          color: #343a40;
         }
       }
     }
@@ -63,9 +65,5 @@
 @media screen and (max-width: 768px) {
   .nav {
     display: none;
-  }
-
-  .mobileNav {
-    display: block;
   }
 }

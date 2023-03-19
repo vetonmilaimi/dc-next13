@@ -1,0 +1,98 @@
+.catalogue {
+  display: block;
+  text-align: center;
+  margin-top: 3%;
+
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 85%;
+    margin: 0 auto;
+    background-color: #303849;
+    padding: 3% 1%;
+
+    .card {
+      width: 33%;
+      padding: max(2em, 2vw);
+
+      .image {
+        width: 80%;
+        height: auto;
+      }
+
+      .title {
+        margin-top: 0.3em;
+        font-size: max(24px, 1.5vw);
+        color: #ffc107;
+        text-shadow: -1px 1px 0 hsla(0, 0%, 100%, 0.3);
+      }
+
+      .description {
+        font-size: max(1rem, 1vw);
+        color: #fff;
+        margin: 1.2em 0;
+      }
+
+      .button {
+        margin: auto;
+        font-size: max(1.2rem, 1.2vw);
+        padding: max(0.3em, 0.3vw) max(1.3em, 1.3vw);
+        background-color: #f2c014;
+        font-weight: bold;
+        color: #343a40;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: #fff;
+          outline: 1px solid #343a40;
+          color: #343a40;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .catalogue {
+
+    .cards {
+      max-width: 85%;
+      display: block;
+
+      .card {
+        width: 100%;
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .catalogue {
+
+    .cards {
+      max-width: 85%;
+      display: block;
+
+      .card {
+        width: 100%;
+      }
+    }
+  }
+  
+}
+
+@media screen and (max-width: 520px) {
+  .catalogue {
+
+    .cards {
+      max-width: 100%;
+      display: block;
+
+      .card {
+        width: 100%;
+      }
+    }
+  }
+}

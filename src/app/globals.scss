@@ -5,6 +5,8 @@
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
 html,
@@ -21,7 +23,7 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #488ef0;
+    background-color: #f2c014;
     border-radius: max(10px, 0.625vw);
   }
 }

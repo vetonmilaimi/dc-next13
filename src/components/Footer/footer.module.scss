@@ -1,7 +1,116 @@
 .footer {
-  // position: absolute;
-  // bottom: 1%;
-  // left: 50%;
-  // transform: translateX(-50%);
-  text-align: center;
+  .firstRow {
+    background-color: #343a40;
+    text-align: center;
+    margin-top: 3%;
+    padding: 3% 1%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    .footerSection {
+      width: 32%;
+
+      .line {
+        width: 95%;
+        margin: auto;
+      }
+
+      h3.title {
+        color: #f2c014;
+        font-size: max(19px, 1.187vw);
+        // margin-bottom: max(0.8em, 0.8vw);
+        margin-top: max(0.8em, 0.8vw);
+      }
+
+      p.description {
+        color: #fff;
+        padding: 0 3%;
+        text-align: center;
+        font-size: max(1em, 1vw);
+      }
+
+      .socialIcons {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: max(1em, 1vw);
+
+        li {
+          color: #fff;
+          padding: max(1em, 1vw);
+          font-size: max(1.4em, 1.4vw);
+          cursor: pointer;
+
+          &:hover {
+            color: #f2c014;
+          }
+        }
+      }
+
+      .items {
+        text-align: start;
+        color: #fff;
+        font-size: max(1em, 1vw);
+        padding: 1% 3%;
+
+        .icon {
+          font-size: 1.5em;
+          color: #f2c014;
+          padding: max(0.3em, 0.3vw) max(0.8em, 0.8vw);
+          padding-left: 0;
+          vertical-align: middle;
+        }
+      }
+
+      ul.links {
+        color: #fff;
+        font-size: max(1em, 1vw);
+        // padding: 1% 3%;
+        font-style: oblique;
+
+        li {
+          padding-bottom: 1%;
+
+          &:hover {
+            color: #f2c014;
+          }
+        }
+      }
+    }
+  }
+
+  .secondRow {
+    text-align: center;
+    padding: 1.5%;
+    font-weight: lighter;
+    font-size: max(16px, 1vw);
+    color: #343a40;
+    font-style: oblique;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    .firstRow {
+      display: block;
+
+      .footerSection {
+        margin: 0 auto;
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .footer {
+    .firstRow {
+      .footerSection {
+        .socialIcons {
+          display: block;
+        }
+      }
+    }
+  }
 }
