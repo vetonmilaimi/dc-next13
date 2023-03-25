@@ -12,6 +12,8 @@ const MobileNav: React.FC = () => {
     setOpenDrawer(!openDrawer)
   }
 
+  if (openDrawer) document.body.style.overflow = "hidden"
+
   return (
     <>
       {
@@ -24,11 +26,6 @@ const MobileNav: React.FC = () => {
           }} />
           <nav className={styles.mobileNav}>
             <Toolbar drawerClickHandler={clickHandler} />
-            {/* <h1>
-              <a href="">
-                Duraj-Com
-              </a>
-            </h1> */}
             <ul className={styles.list}>
               <li>
                 <Link href="/">

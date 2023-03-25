@@ -1,7 +1,7 @@
 .backdrop {
   width: 100%;
   min-height: 100vh;
-  height: fill-available;
+  height: stretch;
   background: rgba(0, 0, 0, 0.75);
   position: fixed;
   top: 0;
