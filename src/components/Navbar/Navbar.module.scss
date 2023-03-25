@@ -14,19 +14,20 @@
   }
 
   .list {
+    border-top: 1px solid white;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    width: 75%;
+    width: 80%;
     display: flex;
-    gap: max(2em, 2vw);
+    gap: max(1em, 1vw);
     justify-content: flex-end;
 
     li {
       list-style: none;
       width: fit-content;
-      font-size: max(1.1em, 1.1vw);
+      font-size: max(1.0em, 1.0vw);
 
       a {
         display: block;
@@ -44,26 +45,9 @@
 
 @media screen and (max-width: 1024px) {
   .nav {
-    h1 {
-      font-size: 1.8em;
-    }
-
-    .list {
-      gap: 1em;
-
-      li {
-        font-size: 0.8em;
-
-        a {
-          padding: 8px 12px;
-        }
-      }
-    }
+    display: none;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .nav {
-    display: none;
-  }
 }

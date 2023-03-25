@@ -14,17 +14,22 @@ const Navbar: React.FC = () => {
         <ul className={styles.list}>
           <li>
             <Link href="/">
-              Ballina
+              Home
             </Link>
           </li>
           <li>
-            <Link href="/contact-us">
-              Kontaktoni
+            <Link href="/catalogue/doors">
+              Dyer dhe Taraba
             </Link>
           </li>
           <li>
-            <Link href="/services">
-              Shërbimet
+            <Link href="/catalgue/stairs">
+              Gilindera për shkallë
+            </Link>
+          </li>
+          <li>
+            <Link href="/catalogue/terraces">
+              Terasa
             </Link>
           </li>
           <li>

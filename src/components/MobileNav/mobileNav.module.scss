@@ -21,26 +21,29 @@
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
-    
+    border-top: 1px solid white;
+
     li {
       width: fit-content;
       font-size: 1em;
-        display: block;
+      padding: 1em;
+      display: block;
 
       a {
         color: #fff;
-        padding: 14px 16p;
+        padding: 14px 16px;
 
         &:hover {
           background-color: #6c757d;
+          color: #f2c014;
         }
       }
     }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .mobileNav {
-    // display: block;
+    display: block;
   }
 }
