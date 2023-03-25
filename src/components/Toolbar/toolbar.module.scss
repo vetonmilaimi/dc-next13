@@ -1,20 +1,26 @@
 .toolbar {
-  padding: 0.75em 1.25em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #343a40;
-  width: 100%;
-  // max-width: 380px;
+  display: none;
+}
 
-  a {
-    color: #fff;
-    font-size: 1.2em;
-  }
+@media screen and (max-width: 1024px) {
+  .toolbar {
+    padding: 0.75em 1.25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40;
+    width: 100%;
+    // max-width: 380px;
 
-  p {
-    vertical-align: middle;
-    font-size: 1.2em;
-    color: #fff;
+    a {
+      color: #fff;
+      font-size: 1.2em;
+    }
+
+    p {
+      vertical-align: middle;
+      font-size: 1.2em;
+      color: #fff;
+    }
   }
 }

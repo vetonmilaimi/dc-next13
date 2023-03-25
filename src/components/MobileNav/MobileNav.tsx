@@ -3,6 +3,7 @@ import { useState } from "react"
 import Link from 'next/link'
 import Toolbar from '../Toolbar'
 import styles from './mobileNav.module.scss'
+import Backdrop from "../Backdrop"
 
 const MobileNav: React.FC = () => {
   const [openDrawer, setOpenDrawer] = useState<boolean>(false)
@@ -18,8 +19,9 @@ const MobileNav: React.FC = () => {
       }
       {
         openDrawer && <>
-
-
+          <Backdrop clickHandler={() => {
+            setOpenDrawer(false)
+          }} />
           <nav className={styles.mobileNav}>
             <Toolbar drawerClickHandler={clickHandler} />
             {/* <h1>
